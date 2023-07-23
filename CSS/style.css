@@ -133,7 +133,79 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.about-me {
+  font-size: 16px !important;
+}
 
+
+/* Technical Skills Section styling */
+.section {
+  position: relative; /* To create a context for absolute positioning */
+}
+
+.list-unstyled {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-unstyled li {
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: #007bff; /* Customize the background color */
+  color: #fff; /* Customize the text color */
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.skill-icon {
+  font-size: 24px; /* Customize the icon size */
+  margin-right: 10px; /* Add spacing between the icon and the skill name */
+}
+
+.skill-description {
+  display: block;
+  position: absolute;
+  bottom: -25px; /* Position the description just below the skill name */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff; /* Customize the background color */
+  color: #fff; /* Customize the text color */
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0; /* Initially, the description is hidden */
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.list-unstyled li:hover {
+  background-color: #0056b3; /* Customize the background color on hover */
+}
+
+.list-unstyled li:hover .skill-description {
+  opacity: 1; /* Show the description on hover */
+  visibility: visible;
+}
+
+/* Elaborate animation: Bounce effect */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.list-unstyled li:hover .skill-description {
+  animation: bounce 0.5s ease; /* Apply the bounce animation on hover */
+}
 
 
 footer {
