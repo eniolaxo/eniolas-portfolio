@@ -1,22 +1,45 @@
-/* styles.css */
-/* h1 {
-  font-size: 100
-} */
 
 body {
   background-image: linear-gradient(to right, #ff6f7c, #ffbd67);
 }
 
+/* ------------------------------------------------------------------------------------- */
+
 /* Navbar styling */
 .navbar {
   background-image: linear-gradient(to right, #ff6f7c, #ffbd67);
-  margin-bottom: 0px;
-  border-radius: 0px;
+  color: #fff; /* White text */
+  position: relative; /* Add relative positioning to the navbar */
+}
+
+.eniola-logo {
+  height: 65px; /* Adjust the height of the logo as needed */
+  position: absolute; /* Add absolute positioning to the logo */
+  top: 50%; /* Position the logo 50% from the top of the navbar */
+  transform: translateY(-50%); /* Vertically center the logo */
+  left: -55px; /* Position the logo 15px from the left edge of the navbar */
 }
 
 .navbar-brand {
-  color: #fff; /* White text */
+  padding: 0;
 }
+
+.navbar-nav {
+  flex-direction: row; /* Display the menu items in a row */
+}
+
+.nav-item {
+  margin-right: 15px; /* Adjust the spacing between links as needed */
+}
+
+.nav-link {
+  color: #fff; /* Set link color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+
 
 /* Jumbotron section styling */
 .jumbotron-section {
@@ -35,20 +58,42 @@ body {
 
 .hello-opener {
   font-size: 20px;
+  font-family: monospace;
+  margin-bottom: 10px;
+
+}
+
+.my-name {
+font-size: 95px;
+font-family: VT323;
+margin-bottom: 10px;
 }
 
 .dev-opener {
-  font-size: 25px;
+  font-size: 20px;
+  font-family: monospace;
+color: aquamarine;
+margin-bottom: 8px;
 }
 
 .quote-opener {
-  font-size: 20px;
+  font-size: 13px;
+  color: rgb(237, 235, 235);
+  font-family: Calibre-Regular, sans-serif;
 }
+
+
 
 .btn-primary {
-  margin-top: 20px; /* Add some space between the text and button */
+  margin-top:20px;
+  background-color: rgba(40, 247, 212, 0.865) !important; /* Custom color that complements the background */
+  color: #fff; /* White text */
+  font-family: monospace;
 }
 
+
+
+/* ------------------------------------------------------------------------------------- */
 
 /* Project section styling */
 #projects {
@@ -103,6 +148,10 @@ body {
   color: #fff; /* Customize the text color on hover */
 }
 
+
+/* ------------------------------------------------------------------------------------- */
+
+
 /* About Me section styling */
 #about {
   padding: 6rem 0;
@@ -136,6 +185,8 @@ body {
 .about-me {
   font-size: 16px !important;
 }
+
+/* ------------------------------------------------------------------------------------- */
 
 
 /* Technical Skills Section styling */
@@ -192,6 +243,8 @@ body {
   visibility: visible;
 }
 
+
+
 /* Elaborate animation: Bounce effect */
 @keyframes bounce {
   0%,
@@ -206,6 +259,11 @@ body {
 .list-unstyled li:hover .skill-description {
   animation: bounce 0.5s ease; /* Apply the bounce animation on hover */
 }
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
 
 
 footer {
