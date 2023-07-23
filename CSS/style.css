@@ -3,6 +3,9 @@
   font-size: 100
 } */
 
+body {
+  background-image: linear-gradient(to right, #ff6f7c, #ffbd67);
+}
 
 /* Navbar styling */
 .navbar {
@@ -44,4 +47,65 @@
 
 .btn-primary {
   margin-top: 20px; /* Add some space between the text and button */
+}
+
+
+/* Project section styling */
+#projects {
+  padding: 2rem 0; /* Adjust padding as needed */
+}
+
+.project-box__wrapper {
+  display: flex; /* Use flexbox to display the project boxes in a row */
+  justify-content: space-between; /* Add space between project boxes */
+  color: #000; /* Change to your desired text color */
+  margin-top: 6rem;
+}
+
+.project-box {
+  flex-basis: calc(33.33% - 1rem); /* Set the width of each project box to one-third of the container */
+  padding: 2rem;
+  height: 25rem; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background: linear-gradient(to bottom, #F3CBAB, #FEEDCA);
+}
+
+.project-box__link {
+  align-self: flex-end;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-box__link img {
+  width: 30px; /* Adjust the icon size as needed */
+}
+
+.project-box__content {
+  align-self: center;
+}
+
+.project-description {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Customize the button color */
+  color: #fff; /* Customize the button text color */
+}
+
+/* Hover effect */
+.project-box:hover {
+  border: solid 2px #fff; /* Customize the border color on hover */
+  color: #fff; /* Customize the text color on hover */
+}
+
+
+
+
+footer {
+  background-image: linear-gradient(to right, #ff6f7c, #ffbd67);
 }
