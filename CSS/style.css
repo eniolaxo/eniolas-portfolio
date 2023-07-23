@@ -1,54 +1,47 @@
 /* styles.css */
+/* h1 {
+  font-size: 100
+} */
+
 
 /* Navbar styling */
 .navbar {
-  background-image: linear-gradient(to right, #fc98a0f5, #fba652);
+  background-image: linear-gradient(to right, #ff6f7c, #ffbd67);
+  margin-bottom: 0px;
+  border-radius: 0px;
 }
 
 .navbar-brand {
   color: #fff; /* White text */
 }
 
-/* Carousel jumbotron styling */
-.carousel-inner {
-  background-image: linear-gradient(to right, #fc98a0f5, #fba652);
-  color: #fff; /* White text */
-}
-
-/* styles.css */
-
-/* Navbar styling */
-.navbar {
-  background-image: linear-gradient(to right, #ff6f7c, #ffbd67);
-  margin-bottom: 0;
-  border-radius: 0;
-}
-
-.navbar-brand {
-  color: #fff; /* White text */
-}
-
-/* Carousel jumbotron styling */
-.carousel-inner {
+/* Jumbotron section styling */
+.jumbotron-section {
   background-image: linear-gradient(to right, #ff6f7c, #ffbd67);
   color: #fff; /* White text */
-  height: 91vh; /* Set height to 50% of viewport height */
+  height: 91vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.carousel-caption {
-  width: 100%; /* Ensure the caption spans the entire width */
-  text-align: center;
+.jumbotron-content {
+  text-align: left;
+  padding-left: 20px;
 }
 
-.carousel-caption h1 {
-  font-size: 2.5rem; /* Adjust font size for the title */
+.hello-opener {
+  font-size: 20px;
 }
 
-.carousel-caption .btn {
-  margin-top: 20px; /* Add some space between the title and button */
+.dev-opener {
+  font-size: 25px;
 }
 
+.quote-opener {
+  font-size: 20px;
+}
+
+.btn-primary {
+  margin-top: 20px; /* Add some space between the text and button */
+}
