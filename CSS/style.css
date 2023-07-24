@@ -63,6 +63,28 @@ body {
   padding-left: 20px;
 }
 
+/* ... Other styles ... */
+
+@keyframes wavingAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wave {
+  display: inline-block;
+  animation: wavingAnimation 2s infinite; /* Adjust the animation duration as needed */
+}
+
+/* ... Other styles ... */
+
+
 .hello-opener {
   font-size: 20px;
   font-family: monospace;
