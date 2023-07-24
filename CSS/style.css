@@ -3,6 +3,9 @@ body {
   background-image: linear-gradient(to right, #ff6f7c, #ffbd67);
 }
 
+/* p {
+  color: white;
+} */
 /* ------------------------------------------------------------------------------------- */
 
 /* Navbar styling */
@@ -23,6 +26,7 @@ body {
 .navbar-brand {
   padding: 0;
 }
+ line-height: 50px;
 
 .navbar-nav {
   flex-direction: row; /* Display the menu items in a row */
@@ -37,6 +41,9 @@ body {
   text-decoration: none; /* Remove underline */
 }
 
+.ml-auto {
+  margin-top: 10px; 
+}
 
 /* ------------------------------------------------------------------------------------- */
 
@@ -90,6 +97,7 @@ margin-bottom: 8px;
   color: #fff; /* White text */
   font-family: monospace;
 }
+
 
 
 
@@ -148,6 +156,18 @@ margin-bottom: 8px;
   color: #fff; /* Customize the text color on hover */
 }
 
+.worked-on {
+  color: aquamarine;
+  margin-bottom: 10px;
+}
+
+.sec-color {
+  color: white;
+  font-size: 25px;
+  font-family: monospace;
+}
+
+
 
 /* ------------------------------------------------------------------------------------- */
 
@@ -184,8 +204,15 @@ margin-bottom: 8px;
 
 .about-me {
   font-size: 16px !important;
+  color: rgb(255, 255, 255);
+  font-family: Calibre-Regular, sans-serif;
 }
 
+.abt-me {
+  font-family: monospace !important;
+  color: rgb(255, 255, 255) !important;
+
+}
 /* ------------------------------------------------------------------------------------- */
 
 
