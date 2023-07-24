@@ -80,3 +80,24 @@ document.addEventListener('DOMContentLoaded', function () {
   darkModeToggle.addEventListener('click', toggleDarkMode);
 });
 
+// Function to show/hide the Back to Top button
+function toggleBackToTopButton() {
+  const backToTopButton = document.querySelector('.back-to-top-btn');
+  if (window.scrollY >= 300) {
+    backToTopButton.style.opacity = '1';
+  } else {
+    backToTopButton.style.opacity = '0';
+  }
+}
+
+// Function to scroll to the top of the page smoothly
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Event listener to show/hide the Back to Top button
+window.addEventListener('scroll', toggleBackToTopButton);
+
