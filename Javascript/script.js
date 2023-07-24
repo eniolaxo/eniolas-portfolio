@@ -66,6 +66,50 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+/*---------------------------------------------------------------------------*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const typingTextElement = document.getElementById("typing-text");
+  const textToType = "eniola...";
+  const typingSpeed = 150; // Adjust typing speed (lower value for faster typing)
+
+  let charIndex = 0;
+  let isTypingForward = true;
+
+  function typeText() {
+    if (isTypingForward) {
+      typingTextElement.textContent = textToType.slice(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === textToType.length) {
+        isTypingForward = false;
+        setTimeout(eraseText, 1000); // Wait for 1 second before starting erasing
+      } else {
+        setTimeout(typeText, typingSpeed);
+      }
+    } else {
+      typingTextElement.textContent = textToType.slice(0, charIndex);
+      charIndex--;
+      if (charIndex === 0) {
+        isTypingForward = true;
+        setTimeout(typeText, typingSpeed);
+      } else {
+        setTimeout(eraseText, typingSpeed);
+      }
+    }
+  }
+
+  function eraseText() {
+    setTimeout(typeText, typingSpeed);
+  }
+
+  typeText(); // Start the typing effect
+});
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
 
 // script.js
 document.addEventListener('DOMContentLoaded', function () {
