@@ -66,3 +66,17 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+
+// script.js
+document.addEventListener('DOMContentLoaded', function () {
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+  }
+
+  // Dark mode toggle button event listener
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
+  darkModeToggle.addEventListener('click', toggleDarkMode);
+});
+

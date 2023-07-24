@@ -341,3 +341,54 @@ footer {
   background-image: linear-gradient(to right, #ff6f7c, #ffbd67);
 }
 
+/* Light Theme Styles (Default) */
+
+/* Update your existing CSS styles for the light theme here */
+
+/* Dark Theme Styles */
+body.dark-mode {
+  /* For example: */
+  background-image: linear-gradient(to right, #00542a, #123ea6);
+  color: #f0f0f0;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f0f0f0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  /* Background and text color for dark mode */
+  background-image: linear-gradient(to right, #00542a, #123ea6);
+  color: white;
+}
+
+/* Navbar styles for dark mode */
+body.dark-mode .navbar {
+  background-image: linear-gradient(to right, #00542a, #123ea6);
+}
+
+body.dark-mode .navbar a {
+  color: white; 
+}
+
+/* Jumbotron styles for dark mode */
+body.dark-mode .jumbotron-section {
+  background-image: linear-gradient(to right, #00542a, #123ea6);
+  color: white; 
+}
+
+/* Footer styles for dark mode */
+body.dark-mode .footer {
+  background-image: linear-gradient(to right, #00542a, #123ea6);
+  color: white; 
+}
