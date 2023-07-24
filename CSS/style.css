@@ -106,6 +106,7 @@ margin-bottom: 8px;
 /* Project section styling */
 #projects {
   padding: 2rem 0; /* Adjust padding as needed */
+  padding-top: 25px;
 }
 
 .project-box__wrapper {
@@ -163,10 +164,16 @@ margin-bottom: 8px;
 
 .sec-color {
   color: white;
-  font-size: 25px;
+  font-size: 30px;
   font-family: monospace;
 }
 
+.titles {
+  font-family: monospace !important;
+  color: rgb(184, 71, 71) !important;
+font-size: 20px !important;
+margin-bottom: 10px;
+}
 
 
 /* ------------------------------------------------------------------------------------- */
