@@ -249,6 +249,20 @@ margin-bottom: 10px;
   color: rgb(255, 255, 255) !important;
 
 }
+
+.about-me-image {
+  max-width: 100%; /* To ensure the image doesn't exceed its container width */
+  height: auto; /* To maintain the aspect ratio of the image */
+  display: block; /* Remove any default spacing */
+  margin-bottom: 2rem;
+}
+
+/* Apply filters to change image color to white */
+.line-art-image {
+  filter: brightness(0) invert(1) grayscale(1); /* Change to white */ 
+}
+
+
 /* ------------------------------------------------------------------------------------- */
 
 
