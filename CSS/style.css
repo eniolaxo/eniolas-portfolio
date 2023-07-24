@@ -104,6 +104,11 @@ margin-bottom: 8px;
 /* ------------------------------------------------------------------------------------- */
 
 /* Project section styling */
+
+.clicker-thing {
+  margin-left: 45px;
+}
+
 #projects {
   padding: 2rem 0; /* Adjust padding as needed */
   padding-top: 25px;
@@ -227,7 +232,9 @@ margin-bottom: 10px;
 /* Technical Skills Section styling */
 .section {
   position: relative; /* To create a context for absolute positioning */
+  text-align: center; /* Center the content horizontally */
 }
+
 
 .list-unstyled {
   display: flex;
@@ -241,12 +248,12 @@ margin-bottom: 10px;
 .list-unstyled li {
   padding: 10px 15px;
   margin: 10px;
-  background-color: #007bff; /* Customize the background color */
+  background-color: rgba(40, 247, 212, 0.865) !important;
   color: #fff; /* Customize the text color */
-  border-radius: 5px;
-  position: relative;
+  border-radius: 25px; /* Round the buttons */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; 
+  
 }
 
 .skill-icon {
@@ -298,7 +305,12 @@ margin-bottom: 10px;
 
 /* ------------------------------------------------------------------------------------- */
 
-
+/* Contact section */
+.contact-moi {
+  font-size: 30px;
+  color: white;
+  font-family: monospace !important;
+}
 
 
 footer {
